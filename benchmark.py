@@ -8,7 +8,8 @@ def benchmark_miner():
     command = ['~/minerd', '--benchmark']
     process = subprocess.Popen(command,
         stderr=subprocess.PIPE,
-        stdout=subprocess.PIPE)
+        stdout=subprocess.PIPE,
+        shell=True)
     time.sleep(30)
     process.kill()
     lines = process.stderr.readlines()
