@@ -1,15 +1,16 @@
 #!/usr/bin/env python
 
+import os
 import subprocess
 import time
 
-# expects minerd in ~/
 def benchmark_miner():
-    command = ['~/minerd', '--benchmark']
+
+    command = [os.path.expanduser('~/minerd'),
+                '--benchmark']
     process = subprocess.Popen(command,
         stderr=subprocess.PIPE,
-        stdout=subprocess.PIPE,
-        shell=True)
+        stdout=subprocess.PIPE)
     time.sleep(30)
     process.kill()
     lines = process.stderr.readlines()
