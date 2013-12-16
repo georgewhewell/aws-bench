@@ -1,0 +1,10 @@
+c1.medium,8.96
+c1.xlarge,34.75
+c3.2xlarge,36.16
+c3.8xlarge,144.38
+c3.large,9.04
+c3.xlarge,18.11
+m1.large,9.69
+m1.medium,4.44
+m1.small,2.22
+t1.micro,5.96
